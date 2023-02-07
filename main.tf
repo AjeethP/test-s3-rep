@@ -1,8 +1,20 @@
-resource "aws_instance" "test_ec2one" {
-  ami           = "ami-090fa75af13c156b4"
-  instance_type = "t2.micro"
-  associate_public_ip_address = true
-  tags = {
-    Name = "test_ectwo_one"
-  }
+module "IAM" {
+    source = "git::https://github.com/AjeethP/test-module.git//test/3.0?ref=v10"
+
+   role_name = "test-role-mod-1"# Name of the role
+   application_id = "POC"# Application id
+   environment = "POC" # environment
+   assume_role_policy = {
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Action": "sts:AssumeRole",
+      "Principal": {
+        "Service": ["s3.amazonaws.com","batchoperations.s3.amazonaws.com"]
+      },
+      "Effect": "Allow",
+      "Sid": ""
+    }
+  ]
+}
 }
