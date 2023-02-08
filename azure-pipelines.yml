@@ -39,7 +39,7 @@ jobs:
    - task: AmazonWebServices.aws-vsts-tools.AWSShellScript.AWSShellScript@1
      displayName: 'terraform validate'
      inputs:
-       awsCredentials: devsand-vasu
+       awsCredentials: Devsand_aws
        regionName: 'us-east-1'
        scriptType: inline
        inlineScript: |
@@ -51,7 +51,7 @@ jobs:
    - task: AmazonWebServices.aws-vsts-tools.AWSShellScript.AWSShellScript@1
      displayName: 'terraform plan'
      inputs:
-       awsCredentials: devsand-vasu
+       awsCredentials: Devsand_aws
        regionName: 'us-east-1'
        scriptType: inline
        inlineScript: |
