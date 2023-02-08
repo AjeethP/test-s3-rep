@@ -1,3 +1,12 @@
+provider "aws" {
+    region = "us-east-1"
+}
+
+
+
+
+
+
 module "IAM" {
     source = "git::https://github.com/AjeethP/test-module.git//test/3.0?ref=v10"
 
