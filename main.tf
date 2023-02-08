@@ -8,7 +8,7 @@ provider "aws" {
 
 
 module "IAM" {
-    source = "git::https://AjeethP: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:@github.com/AjeethP/test-module-1.git//test/3.0?ref=v10"
+    source = "git::https://AjeethP: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@github.com/AjeethP/test-module-1.git//test/3.0?ref=v10"
 
    role_name = "test-role-mod-1"# Name of the role
    application_id = "POC"# Application id
