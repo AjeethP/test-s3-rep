@@ -8,7 +8,7 @@ provider "aws" {
 
 
 module "IAM" {
-    source = "./test-module-1.git/test/3.0"
+    source = "./test-module-1/test/3.0"
 
    role_name = "test-role-mod-1"# Name of the role
    application_id = "POC"# Application id
