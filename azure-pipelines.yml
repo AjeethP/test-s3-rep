@@ -35,6 +35,7 @@ jobs:
        pip install -r requirements.txt
        pip install unittest-xml-reporting
        git clone https://AjeethP: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@github.com/AjeethP/test-module-1.git
+       ls -la
      displayName: 'Install prerequisites'
    # Install terraform & Validating terraform code
    - task: AmazonWebServices.aws-vsts-tools.AWSShellScript.AWSShellScript@1
