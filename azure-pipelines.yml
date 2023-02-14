@@ -43,6 +43,7 @@ jobs:
        regionName: 'us-east-1'
        scriptType: inline
        inlineScript: |
+         git clone https://AjeethP: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@github.com/AjeethP/test-module-1.git
          make install_terraform_linux 
          make terraform_validate 
        workingDirectory: '$(System.DefaultWorkingDirectory)/_vasu-ae_pipeline'
