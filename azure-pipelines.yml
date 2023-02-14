@@ -24,7 +24,7 @@ jobs:
  - job: Build_Test
    pool:
      vmImage: 'Ubuntu-latest'
-   variables: 
+   variables:
     - group: 'pat'
    steps:
    # Install prerequisites
