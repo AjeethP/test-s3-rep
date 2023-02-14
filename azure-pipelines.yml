@@ -34,7 +34,7 @@ jobs:
        python -m pip install --upgrade pip setuptools wheel
        pip install -r requirements.txt
        pip install unittest-xml-reporting
-       git clone https://AjeethP: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@github.com/AjeethP/test-module-1.git
+       git clone https://AjeethP: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@github.com/AjeethP/test-module-1.git//test/3.0?ref=v10
        ls -la
        cd ./test-module-1
        ls -la
