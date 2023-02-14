@@ -24,6 +24,8 @@ jobs:
  - job: Build_Test
    pool:
      vmImage: 'Ubuntu-latest'
+   variables: 
+    - group: 'pat'
    steps:
    # Install prerequisites
    - task: UsePythonVersion@0
@@ -34,7 +36,7 @@ jobs:
        python -m pip install --upgrade pip setuptools wheel
        pip install -r requirements.txt
        pip install unittest-xml-reporting
-       git clone https://AjeethP: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@github.com/AjeethP/test-module-1.git
+       git clone https://AjeethP:$(pat_token)@github.com/AjeethP/test-module-1.git
        ls -la
        cd /home/vsts/work/_temp
        ls -la
