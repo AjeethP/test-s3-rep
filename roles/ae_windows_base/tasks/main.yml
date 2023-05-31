@@ -1,0 +1,5 @@
+---
+- name: testing
+  debug:
+    msg:
+    - "This is for collection testing"
